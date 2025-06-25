@@ -22,7 +22,7 @@ pip install tensorflow numpy matplotlib opencv-python
 jupyter notebook digits_recognition.ipynb
 ```
 3. To predict a custom image:
-4. 
+
 • Add your image (28x28 grayscale) in the test_images folder
 
 • Run the prediction cell in the notebook
