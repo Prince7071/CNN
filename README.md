@@ -1,42 +1,28 @@
 # Digits Recognition Neural Network
 
-A deep learning project that classifies handwritten digits from the MNIST dataset using a Convolutional Neural Network (CNN) built with TensorFlow and Keras. This model achieves high accuracy and is capable of predicting digits from both the test set and custom input images.
+This project uses a Convolutional Neural Network (CNN) to recognize handwritten digits from the MNIST dataset using TensorFlow and Keras.
 
-Features
-CNN-based architecture for image classification
+## Features
 
-Trained on the MNIST dataset (70,000 28×28 grayscale images)
+- Classifies digits (0-9) from 28x28 grayscale images
+- Built using CNN architecture
+- Trained on the MNIST dataset
+- Can predict on test data and custom images
+- Saves and loads trained models
 
-Visualizations of training process and results
+## How to Run
 
-Real-time prediction on custom input images
+1. Install required packages:
 
-Model saving/loading using model.save() and load_model()
+```bash
+pip install tensorflow numpy matplotlib opencv-python
+```
+2. Run the Jupyter notebook:
+```bash
+jupyter notebook digits_recognition.ipynb
+```
+3. To predict a custom image:
+• Add your image (28x28 grayscale) in the test_images folder
+• Run the prediction cell in the notebook
 
-🧾 Project Structure
-bash
-Copy
-Edit
-digits_recognition_neural_network/
-│
-├── digits_recognition.ipynb      # Jupyter notebook with full code
-├── model/                        # Folder to store saved CNN model
-│   └── digits_cnn_model.h5
-├── test_images/                  # Folder for custom test images
-│   └── sample_digit.png
-├── README.md                     # Project documentation
-└── requirements.txt              # Python dependencies
-🧪 Dataset
-This project uses the MNIST dataset, available directly through Keras:
 
-python
-Copy
-Edit
-from tensorflow.keras.datasets import mnist
-60,000 training images
-
-10,000 testing images
-
-Image size: 28×28 pixels, grayscale
-
-Labels: 0 to 9
